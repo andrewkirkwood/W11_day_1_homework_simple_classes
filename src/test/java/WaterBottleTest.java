@@ -27,4 +27,10 @@ public class WaterBottleTest {
         waterBottle.drink();
         assertEquals(80, waterBottle.getVolume().intValue());
     }
+
+    @Test
+    public void check_volume_can_be_reduced_to_0(){
+        waterBottle.empty();
+        assertEquals(0,waterBottle.getVolume().intValue());
+    }
 }
