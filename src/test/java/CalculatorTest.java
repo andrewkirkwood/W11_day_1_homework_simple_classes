@@ -32,7 +32,7 @@ public class CalculatorTest {
 
     @Test
     public void check_calculator_can_divide_first_number_by_second_number(){
-        assertEquals(50, calculator.divide(100,2));
+        assertEquals(50.0, calculator.divide(100,2));
     }
 
 }
