@@ -8,7 +8,7 @@ public class PrinterTest {
 
     @Before
     public void before(){
-        printer = new Printer("Andrews Printer", 100);
+        printer = new Printer("Andrews Printer", 100, 200);
     }
 
     @Test
@@ -19,6 +19,11 @@ public class PrinterTest {
     @Test
     public void check_number_of_sheets_of_paper(){
         assertEquals(100,printer.getNumberOfSheets().intValue());
+    }
+
+    @Test
+    public void check_toner_amount(){
+        assertEquals(200, printer.getToner().intValue());
     }
 
     @Test
@@ -35,6 +40,12 @@ public class PrinterTest {
     public void check_printer_still_prints_if_to_print_quantity_equals_available_sheets(){
         printer.print(5, 20);
         assertEquals(0, printer.getNumberOfSheets().intValue());
+    }
+
+    @Test
+    public void check_printer_toner_reduces_by_1_for_each_page_printed(){
+        printer.print(10, 3);
+        assertEquals(170, printer.getToner().intValue());
     }
 
 
