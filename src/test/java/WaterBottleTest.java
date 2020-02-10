@@ -20,4 +20,11 @@ public class WaterBottleTest {
     public void check_water_bottle_starts_at_100(){
         assertEquals(100, waterBottle.getVolume().intValue());
     }
+
+    @Test
+    public void check_drink_function_reduces_volume_by_10(){
+        waterBottle.drink();
+        waterBottle.drink();
+        assertEquals(80, waterBottle.getVolume().intValue());
+    }
 }
