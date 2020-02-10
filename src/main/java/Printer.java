@@ -14,4 +14,11 @@ public class Printer {
     public Integer getNumberOfSheets() {
         return numberOfSheets;
     }
+
+    public void print(Integer numberOfPages, Integer numberOfCopies){
+        Integer totalAmountOfPagesToPrint = numberOfPages * numberOfCopies;
+        if (totalAmountOfPagesToPrint <= this.numberOfSheets ) {
+            this.numberOfSheets -= totalAmountOfPagesToPrint;
+        }
+    }
 }
