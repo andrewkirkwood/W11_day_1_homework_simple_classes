@@ -16,4 +16,9 @@ public class PrinterTest {
         assertEquals("Andrews Printer", printer.getName());
     }
 
+    @Test
+    public void check_number_of_sheets_of_paper(){
+        assertEquals(100,printer.getNumberOfSheets().intValue());
+    }
+
 }
