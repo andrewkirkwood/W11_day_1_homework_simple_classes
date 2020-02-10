@@ -30,4 +30,9 @@ public class CalculatorTest {
         assertEquals(15, calculator.multiply(5,3));
     }
 
+    @Test
+    public void check_calculator_can_divide_first_number_by_second_number(){
+        assertEquals(50, calculator.divide(100,2));
+    }
+
 }

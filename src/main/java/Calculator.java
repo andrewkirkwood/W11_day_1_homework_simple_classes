@@ -20,4 +20,8 @@ public class Calculator {
     public int multiply(int valueOne, int valueTwo){
         return valueOne * valueTwo;
     }
+
+    public int divide(int valueOne, int valueTwo){
+        return valueOne / valueTwo;
+    }
 }
