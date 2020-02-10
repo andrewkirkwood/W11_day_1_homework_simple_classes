@@ -20,4 +20,14 @@ public class CalculatorTest {
         assertEquals(3, calculator.add(1,2));
     }
 
+    @Test
+    public void check_calculator_can_subtract_second_number_from_first_number(){
+        assertEquals(8, calculator.subtract(10,2));
+    }
+
+    @Test
+    public void check_calculator_can_multiply_two_numbers_together(){
+        assertEquals(15, calculator.multiply(5,3));
+    }
+
 }
