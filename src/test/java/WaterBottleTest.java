@@ -33,4 +33,10 @@ public class WaterBottleTest {
         waterBottle.empty();
         assertEquals(0,waterBottle.getVolume().intValue());
     }
+
+    @Test
+    public void check_volume_can_be_filled_to_capacity_of_100(){
+        waterBottle.fill();
+        assertEquals(100,waterBottle.getVolume().intValue());
+    }
 }
